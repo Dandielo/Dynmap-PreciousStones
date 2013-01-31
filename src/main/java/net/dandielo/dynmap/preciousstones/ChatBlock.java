@@ -1,4 +1,4 @@
-package net.sacredlabyrinth.phaed.dynmap.preciousstones;
+package net.dandielo.dynmap.preciousstones;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;

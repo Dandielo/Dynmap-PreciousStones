@@ -1,4 +1,4 @@
-package net.sacredlabyrinth.phaed.dynmap.preciousstones;
+package net.dandielo.dynmap.preciousstones;
 
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.EventHandler;
@@ -8,8 +8,9 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.dynmap.DynmapAPI;
 import org.dynmap.markers.MarkerAPI;
-import net.sacredlabyrinth.phaed.dynmap.preciousstones.layers.Fields;
-import net.sacredlabyrinth.phaed.dynmap.preciousstones.managers.PlayerManager;
+
+import net.dandielo.dynmap.preciousstones.layers.Fields;
+import net.dandielo.dynmap.preciousstones.managers.PlayerManager;
 
 import java.util.List;
 import java.util.logging.Level;

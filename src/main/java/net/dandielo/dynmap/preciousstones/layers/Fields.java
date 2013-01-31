@@ -1,4 +1,4 @@
-package net.sacredlabyrinth.phaed.dynmap.preciousstones.layers;
+package net.dandielo.dynmap.preciousstones.layers;
 
 import java.io.InputStream;
 import java.io.PrintWriter;
@@ -9,13 +9,13 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import net.dandielo.dynmap.preciousstones.DynmapPreciousStones;
+import net.dandielo.dynmap.preciousstones.Helper;
 import net.sacredlabyrinth.Phaed.PreciousStones.FieldFlag;
 import net.sacredlabyrinth.Phaed.PreciousStones.managers.EntryManager;
 import net.sacredlabyrinth.Phaed.PreciousStones.managers.ForceFieldManager;
 import net.sacredlabyrinth.Phaed.PreciousStones.managers.SettingsManager;
 import net.sacredlabyrinth.Phaed.PreciousStones.vectors.Field;
-import net.sacredlabyrinth.phaed.dynmap.preciousstones.Helper;
-import net.sacredlabyrinth.phaed.dynmap.preciousstones.DynmapPreciousStones;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.configuration.file.FileConfiguration;

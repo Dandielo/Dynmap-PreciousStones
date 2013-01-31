@@ -1,6 +1,6 @@
-package net.sacredlabyrinth.phaed.dynmap.preciousstones;
+package net.dandielo.dynmap.preciousstones;
 
-import net.sacredlabyrinth.phaed.dynmap.preciousstones.layers.Fields;
+import net.dandielo.dynmap.preciousstones.layers.Fields;
 
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
