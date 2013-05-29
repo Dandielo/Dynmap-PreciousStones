@@ -1,9 +1,6 @@
 package net.dandielo.dynmap.preciousstones;
 
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.dynmap.DynmapAPI;
@@ -12,13 +9,11 @@ import org.dynmap.markers.MarkerAPI;
 import net.dandielo.dynmap.preciousstones.layers.Fields;
 import net.dandielo.dynmap.preciousstones.managers.PlayerManager;
 
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import net.sacredlabyrinth.Phaed.PreciousStones.PreciousStones;
-import net.sacredlabyrinth.Phaed.PreciousStones.managers.EntryManager;
-import net.sacredlabyrinth.Phaed.PreciousStones.vectors.Field;
 
+@SuppressWarnings("unused")
 public class DynmapPreciousStones extends JavaPlugin {
 	private static DynmapPreciousStones instance;
 	private static final Logger log = Logger.getLogger("Minecraft");

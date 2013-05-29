@@ -1,7 +1,5 @@
 package net.dandielo.dynmap.preciousstones;
 
-import net.dandielo.dynmap.preciousstones.layers.Fields;
-
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 

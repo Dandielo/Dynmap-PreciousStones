@@ -1,7 +1,6 @@
 package net.dandielo.dynmap.preciousstones.layers;
 
 import java.io.InputStream;
-import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -91,7 +90,6 @@ public class Fields {
 	}
 
 	private void readConfig() {
-		int i = 0;
 		FileConfiguration cfg = plugin.getCfg();
 		
 		enable = cfg.getBoolean(CONFIG + "enable");
@@ -510,7 +508,7 @@ public class Fields {
 		return base;
 	}
 	
-	@SuppressWarnings("serial")
+	@SuppressWarnings({"all"})
 	private class FixedHashMap<K, V extends String> extends HashMap<K, V>
 	{
 		@SuppressWarnings("unchecked")
