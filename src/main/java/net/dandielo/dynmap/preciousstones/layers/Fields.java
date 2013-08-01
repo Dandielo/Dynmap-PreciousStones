@@ -200,7 +200,7 @@ public class Fields {
 
 	private String getFieldPopup(AreaMarker m, Field f) {
 		int data =f.getBlock().getData();
-		FieldStyle as = field_styles.get(f.getTypeId()+((data==0)?"":new Integer(data).toString()) +"_style"); 
+		FieldStyle as = field_styles.get(f.getTypeId()+((data==0)?"":":"+new Integer(data).toString()) +"_style"); 
 		String v = "<div class=\"regioninfo\">" + formatAreaText(as.area_text_format)
 				+ "</div>";
 		return replaceSubstitutions(v, f);
@@ -248,7 +248,7 @@ public class Fields {
 	private void addStyle(AreaMarker m, Field f) {
 
 		int data =f.getBlock().getData();
-		FieldStyle as = field_styles.get(f.getTypeId()+((data==0)?"":new Integer(data).toString()) +"_style");
+		FieldStyle as = field_styles.get(f.getTypeId()+((data==0)?"":":"+new Integer(data).toString()) +"_style");
 
 		if (as == null) {
 			as = default_style;
