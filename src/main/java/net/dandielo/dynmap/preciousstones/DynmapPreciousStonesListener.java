@@ -46,6 +46,12 @@ public class DynmapPreciousStonesListener implements Listener {
 					plugin.getDynmapApi().assertPlayerVisibility(e.getPlayer(), false, plugin);
 					plugin.getPlayerManager().getEntry(e.getPlayer()).setVisible(false);
 				}
+				else
+				if ( f.hasFlag(FieldFlag.DYNMAP_SHOW_PLAYERS) && f.isAllowed(e.getPlayer().getName()) )
+				{
+					plugin.getDynmapApi().assertPlayerVisibility(e.getPlayer(), true, plugin);
+					plugin.getPlayerManager().getEntry(e.getPlayer()).setVisible(true);
+				}
 			}
 		}
 					
