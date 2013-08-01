@@ -200,8 +200,10 @@ public class Fields {
 
 	private String getFieldPopup(AreaMarker m, Field f) {
 		FieldStyle as = field_styles.get(f.getTypeId() + "_style");
-		String v = "<div class=\"regioninfo\">" + formatAreaText(as.area_text_format)
-				+ "</div>";
+		String asrt="";
+		if(as.area_text_format!= null){asrt=formatAreaText(as.area_text_format);}
+			else{asrt="null";}
+		String v = "<div class=\"regioninfo\">"+ asrt+"</div>";
 		return replaceSubstitutions(v, f);
 	}
 
