@@ -199,8 +199,16 @@ public class Fields {
 	}
 
 	private String getFieldPopup(AreaMarker m, Field f) {
-		int data =f.getBlock().getData();
-		FieldStyle as = field_styles.get(f.getTypeId()+((data==0)?"":":"+new Integer(data).toString()) +"_style"); 
+		int data = f.getBlock().getData();
+		//try to get the field style with ID and data values
+		FieldStyle as = field_styles.get(f.getTypeId() + (data == 0 ? "" : ":" + new Integer(data).toString()) + "_style");
+
+		//if null use default style instead
+		if (as == null) {
+			as = default_style;
+		}
+		
+		//do stuff with the style  
 		String v = "<div class=\"regioninfo\">" + formatAreaText(as.area_text_format)
 				+ "</div>";
 		return replaceSubstitutions(v, f);
@@ -247,9 +255,12 @@ public class Fields {
 
 	private void addStyle(AreaMarker m, Field f) {
 
-		int data =f.getBlock().getData();
-		FieldStyle as = field_styles.get(f.getTypeId()+((data==0)?"":":"+new Integer(data).toString()) +"_style");
 
+		int data = f.getBlock().getData();
+		//try to get the field style with ID and data values
+		FieldStyle as = field_styles.get(f.getTypeId() + (data == 0 ? "" : ":" + new Integer(data).toString()) + "_style");
+		
+		//if null use default style instead
 		if (as == null) {
 			as = default_style;
 		}
@@ -426,21 +437,18 @@ public class Fields {
 			oldm.deleteMarker();
 		}
 
-		// clean and replace the marker set
-		/*
-		 * And replace with new map
-		 */
-		resareas.clear();
-		resareas = newmap;
-
 		for (Marker oldMarker : markers.values()) {
 			oldMarker.deleteMarker();
 		}
+		
+		// clean and replace the area marker set
+		resareas.clear();
+		resareas = newmap;
 
 		// clean and replace the marker set
-
 		markers.clear();
 		markers = newMarkers;
+
 
 	}
 
