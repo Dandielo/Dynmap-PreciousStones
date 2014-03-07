@@ -26,29 +26,7 @@ import org.dynmap.markers.MarkerSet;
 public class Fields {
 
 	private static final Pattern pattern = Pattern.compile("(\\^%\\w+%)|(%\\w+%)|(<[\\S|\\s][^\\^|[%\\w]]*>)|([^%\\^]*)");
-	
-	/*public static void main(String[] args)
-	{
-		String v = formatAreaText("^%type% ^%name%%owner%%cords%");
 		
-		v = format(v, "%type%", "", "Forester");
-		v = format(v, "%name%", "", "");
-		v = format(v, "%owner%", "Owner", "Dandielo");
-		v = format(v, "%cords%", "", "(1,2,3)");
-		
-		
-		Matcher m = pattern.matcher("<span style=\"font-size:120%\">^%type% ^%name%</span> %name%^%tt%sasd asda ds%s% asd^%d%");
-		while ( m.find() )
-		{
-			System.out.println(m.group(1));
-			System.out.println(m.group(2));
-			System.out.println(m.group(0));
-			System.out.println();
-		}
-		
-	}*/
-	
-	
 	private final String HTML = "html.";
 	private final String MARKER_SET = "preciousstones.fields";
 	private final String CONFIG = "layer.fields.";

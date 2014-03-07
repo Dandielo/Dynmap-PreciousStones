@@ -23,12 +23,18 @@ public class DynmapPreciousStonesListener implements Listener {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent e)
     {
+		//return at start if we dont want to utilize it 
+		if (!plugin.getConfig().getBoolean("players.hide", true)) return;
+		
 		plugin.getPlayerManager().addEntry(e.getPlayer());
     }
     
 	@EventHandler
 	public void onPlayerMove(PlayerMoveEvent e)
 	{
+		//return at start if we dont want to utilize it 
+		if (!plugin.getConfig().getBoolean("players.hide", true)) return;
+		
 		EntryManager em = plugin.getPreciousStones().getEntryManager();
 		
 		List<Field> fields = em.getPlayerEntryFields(e.getPlayer());

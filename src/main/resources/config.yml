@@ -1,5 +1,6 @@
 # Dynmap-PreciousStones configuration
-
+players:
+  hide: true
 toggles:
   update-seconds: 60                # How often the toggles are updated
   hide-warring: true                # Hides members of clans while the clans are at war, not implemented yet

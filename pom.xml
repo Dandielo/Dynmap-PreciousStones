@@ -8,13 +8,13 @@
   
   <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<craftbukkit.version>1.6.2-R0.1-SNAPSHOT</craftbukkit.version>
-		<preciousstones.version>9.5.5</preciousstones.version>
-		<dynmap.version>1.3</dynmap.version>
-				<build.number>Unknown</build.number>
+		<craftbukkit.version>1.7.2-R0.4-SNAPSHOT</craftbukkit.version>
+		<preciousstones.version>9.6.6</preciousstones.version>
+		<dynmap.version>1.9</dynmap.version>
+				<build.number>Unknown</build.number> 
 	</properties>
 
-	<!-- Repositories -->
+	<!-- Repositories --> 
 	<repositories> 
 		<repository>
 			<id>bukkit-repo</id>
