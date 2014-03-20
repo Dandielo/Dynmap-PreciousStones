@@ -328,24 +328,27 @@ public class Fields {
 		/*
 		 * Build popup
 		 */
+		Location loc = field.getBlock().getLocation();
+		String name = field.getSettings().getTitle() + "(" + loc.getBlockX()
+				+ "," + loc.getBlockY() + "," + loc.getBlockZ() + ")";
 
 		/*
 		 * Make outline
 		 */
 		double[] x = new double[4];
 		double[] z = new double[4];
+		
 		x[0] = field.getMaxx();
 		z[0] = field.getMaxz();
+		
 		x[1] = field.getMaxx();
-		z[1] = field.getMinz() + 1.0;
-		x[2] = field.getMinx() + 1.0;
-		z[2] = field.getMinz() + 1.0;
-		x[3] = field.getMinx() + 1.0;
+		z[1] = field.getMinz() + 0.0;
+		
+		x[2] = field.getMinx() + 0.0;
+		z[2] = field.getMinz() + 0.0;
+		
+		x[3] = field.getMinx() + 0.0;
 		z[3] = field.getMaxz();
-
-		Location loc = field.getBlock().getLocation();
-		String name = field.getSettings().getTitle() + "(" + loc.getBlockX()
-				+ "," + loc.getBlockY() + "," + loc.getBlockZ() + ")";
 
 		/*
 		 * Existing area?
