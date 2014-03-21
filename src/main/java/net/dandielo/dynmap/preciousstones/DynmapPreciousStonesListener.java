@@ -1,15 +1,8 @@
 package net.dandielo.dynmap.preciousstones;
 
-import java.util.List;
-
-import net.sacredlabyrinth.Phaed.PreciousStones.FieldFlag;
-import net.sacredlabyrinth.Phaed.PreciousStones.managers.EntryManager;
-import net.sacredlabyrinth.Phaed.PreciousStones.vectors.Field;
-
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.event.player.PlayerMoveEvent;
 
 public class DynmapPreciousStonesListener implements Listener {
 
@@ -29,7 +22,7 @@ public class DynmapPreciousStonesListener implements Listener {
 		plugin.getPlayerManager().addEntry(e.getPlayer());
     }
     
-	@EventHandler
+/*	@EventHandler
 	public void onPlayerMove(PlayerMoveEvent e)
 	{
 		//return at start if we dont want to utilize it 
@@ -61,5 +54,5 @@ public class DynmapPreciousStonesListener implements Listener {
 			}
 		}
 					
-	}
+	}*/
 }
