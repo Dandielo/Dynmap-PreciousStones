@@ -9,13 +9,17 @@
   <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<craftbukkit.version>1.7.2-R0.4-SNAPSHOT</craftbukkit.version>
-		<preciousstones.version>9.6.6</preciousstones.version>
+		<preciousstones.version>10.0.5</preciousstones.version>
 		<dynmap.version>1.9</dynmap.version>
-				<build.number>Unknown</build.number> 
+        <build.number>Unknown</build.number>
 	</properties>
 
 	<!-- Repositories --> 
-	<repositories> 
+	<repositories>
+        <repository>
+            <id>elMakers</id>
+            <url>http://maven.elmakers.com/repository/</url>
+        </repository>
 		<repository>
 			<id>bukkit-repo</id>
 			<url>http://repo.bukkit.org/content/groups/public/</url>
