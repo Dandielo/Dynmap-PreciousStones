@@ -10,11 +10,11 @@ import java.util.regex.Pattern;
 
 import net.dandielo.dynmap.preciousstones.DynmapPreciousStones;
 import net.dandielo.dynmap.preciousstones.Helper;
-import net.sacredlabyrinth.Phaed.PreciousStones.FieldFlag;
+import net.sacredlabyrinth.Phaed.PreciousStones.field.Field;
+import net.sacredlabyrinth.Phaed.PreciousStones.field.FieldFlag;
 import net.sacredlabyrinth.Phaed.PreciousStones.managers.EntryManager;
 import net.sacredlabyrinth.Phaed.PreciousStones.managers.ForceFieldManager;
 import net.sacredlabyrinth.Phaed.PreciousStones.managers.SettingsManager;
-import net.sacredlabyrinth.Phaed.PreciousStones.vectors.Field;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -224,7 +224,7 @@ public class Fields {
 					+ "x" + ((f.getRadius() * 2) + 1);
 		}
 		v = format(v, "%dimensions%", sDimensions);
-		v = format(v, "%flags%", f.getFlagsAsString());
+		v = format(v, "%flags%", f.getFlagsModule().getFlagsAsString());
 		
 		v = HTML_BOX_FORMAT.replace("%content%", v);
 		
